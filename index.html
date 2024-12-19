@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tipp. Travel Company</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    
   </head>
   <body>
+     <!-------------------- Header Section --------------------------->
      <section class="Header h-[60rem] relative">
       <div
         class="background bg-cover bg-center absolute inset-0 bottom-[10%]"
@@ -97,10 +105,12 @@
           >
         </div>
       </div>
-     <section >
-      <div class="service lg:pb-[5%] pl-[3%] " >
+     </section>
+       <!-------------------- Service Section --------------------------->
+     <section class="service mt-32 md:mt-0 pr-8">
+      <div class="service flex flex-col items-center lg:pb-[5%] pl-[3%] " >
         <div
-          class="service-header flex flew-row justify-between items-end max-[375px]:w-[90%] w-fit"
+          class="service-header flex flew-row justify-between items-end w-full"
         >
           <p
             class="service-header-text  w-[80%] lg:text-5xl  text-2xl font-[poppins] font-bold"
@@ -116,7 +126,6 @@
               alt="all"
               class="w-[21px] h-[13.5px] min-[375px]:hidden"
             />
-<!-- more than size 375px -->
             <p class="font-[dm-sans] font-normal text-[#FE5B3E]  w-fit max-[375px]:hidden">View All Services</p>
             <img
               src="images\right-arrow.png"
@@ -126,7 +135,7 @@
           </div>
         </div> 
         <!-- container -->        
-        <div class="card-contianer lg:w-[90%]  w-fit max-[375px]:mt-[10px] mt-[70px] flex flex-row gap-[30px] ">
+        <div class="card-container w-fit sm:mt-[10px] mt-[70px] flex md:flex-row flex-wrap gap-[30px]">
           <!-- card 1 - family -->
           <div
             class="service-card-family max-[375px]:w-[344px] max-[375px]:h-[404px] w-[332.5px] h-[272px] rounded-[20px] border-[1px] border-[#F0EDED] flex flex-col justify-center items-center gap-6 "
@@ -151,7 +160,7 @@
           </div>
           <!-- card 2- scuba -->
           <div
-            class="service-card-scuba w-[332.5px] h-[272px] rounded-[20px] border-[1px] border-[#F0EDED] flex flex-col justify-center items-center gap-6"
+            class="service-card-scuba hidden w-[332.5px] h-[272px] rounded-[20px] border-[1px] border-[#F0EDED] sm:flex flex-col justify-center items-center gap-6"
           >
             <div
               class="service-picbox-1 bg-[#FE5B3E1A] w-[80px] h-[80px] rounded-[20px] flex items-center justify-center"
@@ -172,11 +181,9 @@
             </div>
           </div>
 
-         
-
            <!-- card 3- scuba -->
           <div
-            class="service-card-hunting w-[332.5px] h-[272px] rounded-[20px] border-[1px] border-[#F0EDED] flex flex-col justify-center items-center gap-6 shadow-xl"
+            class="service-card-hunting hidden w-[332.5px] h-[272px] rounded-[20px] border-[1px] border-[#F0EDED] sm:flex flex-col justify-center items-center gap-6 shadow-xl"
           >
             <div
               class="service-picbox-3 bg-[#FE5B3E1A] w-[80px] h-[80px] rounded-[20px] flex items-center justify-center"
@@ -196,9 +203,9 @@
               <p class="text-[#467AA8] font-[dm-sans]">122 Properties</p>
             </div>
           </div>
- <!-- card 4- Mountain Bike -->
+          <!-- card 4- Mountain Bike -->
           <div
-            class="service-card-bike w-[332.5px] h-[272px] rounded-[20px] border-[1px] border-[#F0EDED] flex flex-col justify-center items-center gap-6"
+            class="service-card-bike hidden w-[332.5px] h-[272px] rounded-[20px] border-[1px] border-[#F0EDED] sm:flex flex-col justify-center items-center gap-6"
           >
             <div
               class="service-picbox-4 bg-[#FE5B3E1A] w-[80px] h-[80px] rounded-[20px] flex items-center justify-center"
@@ -224,8 +231,9 @@
       </div>
         </div>
       </div>
+     </section>
       
-       
+ <!-------------------- Package Section --------------------------->
 <section class="Tour-Package w-full">
       <main class="flex flex-col items-center">
         <div class="h1 flex flex-col m-10 p-4 items-center">
@@ -318,7 +326,7 @@
       </main>
     </section>
     
-    <!-------------------- Fifa Destination --------------------------->
+    <!-------------------- Destination Section------------------------------------->
     <section class="sm:flex sm:flex-row sm:justify-center sm:items-center w-full flex flex-col justify-center items-center">
       <div class="sm:flex sm:flex-row sm:justify-center sm:items-center sm:w-[50%] sm:py-[237px] pl-6 pr-6 pb-6 flex flex-col justify-center items-start pt-[80px] sm:order-2">
         <div class="sm:flex sm:flex-col sm:justify-center sm:items-start sm:w-[60%] ">
@@ -420,7 +428,7 @@
 
 </div>
 
-
+    </section>
         <div class="sm:hidden flex justify-center py-5">
           <svg width="92" height="20" viewBox="0 0 92 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="10" cy="10" r="10" fill="#E9E4DE"/>
@@ -442,7 +450,7 @@
         </button>
 
         
-
+<!--------------------------------------Feedback-------------------------------------->
     <section
       class="w-full xl:flex-row sm:items-center flex-col flex lg:px-24 pb-12 lg:pb-24"
     >
@@ -490,9 +498,11 @@
         </div>
       </div>
     </section>
-       <section>
+
+    <!-------------------------------------- Place Section --------------------------------------------->
+       <section class="place">
       <div
-        class="place-container flex flex-col justify-end items-center mx-[5%] lg:mt-[5%] mt-[13%]"
+        class="place-container flex flex-col justify-end items-center mx-[5%] lg:mt-[5%] mt-[13%] mb-10"
       >
         <p
           class="font-[poppins] font-bold lg:text-5xl text-2xl text-center lg:w-[30%] w-[90%] lg:p-0 px-10"
@@ -567,6 +577,7 @@
         </div>
       </div>
     </section>
+    <!-- Footer Section -->
      <footer class="w-full pt-20 lg:pt-56 pb-8 relative lg:pl-24">
         <div class="absolute inset-0 bg-[url('./images/footer.png')] bg-cover bg-center opacity-10"></div>
 
@@ -632,6 +643,5 @@
             </div>
         </div>
     </footer>
-  
   </body>
 </html>
